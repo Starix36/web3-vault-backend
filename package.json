@@ -1,0 +1,22 @@
+{
+    "name": "web3-vault-test",
+    "version": "1.0.0",
+    "description": "Web3 engineer test project: Vault contract with testnet deployment",
+    "scripts": {
+        "test": "npx hardhat test",
+        "compile": "npx hardhat compile",
+        "deploy:sepolia": "npx hardhat run scripts/deploy.js --network sepolia",
+        "verify": "npx hardhat verify --network sepolia"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+        "dotenv": "^16.4.5",
+        "hardhat": "^2.27.2"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@openzeppelin/contracts": "^5.4.0",
+        "ethers": "^6.15.0",
+        "extended-path": "^1.0.3"
+    }
+}
